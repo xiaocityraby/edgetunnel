@@ -29,9 +29,9 @@ export default {
 	 */
 	async fetch(request, env, ctx) {
 		try {
-			userID = env.UUID || userID;
-			proxyIP = env.PROXYIP || proxyIP;
-			socks5Address = env.SOCKS5 || socks5Address;
+			// userID = env.UUID || userID;
+			// proxyIP = env.PROXYIP || proxyIP;
+			// socks5Address = env.SOCKS5 || socks5Address;
 			if (socks5Address) {
 				try {
 					parsedSocks5Address = socks5AddressParser(socks5Address);
